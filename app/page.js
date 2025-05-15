@@ -1,103 +1,168 @@
-import Image from "next/image";
+'use client'
 
-export default function Home() {
+import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { LucideCpu, LucideServer, LucideActivity, LucideSettings, LucideShieldCheck } from 'lucide-react'
+
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="bg-black text-white min-h-screen font-sans">
+      <header className="text-center py-20 px-4 relative">
+        <div className="absolute inset-0 -z-10 opacity-10">
+          <Image
+            src="/gpu-hero.jpg"
+            alt="GPU Cloud Illustration"
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
         </div>
+        <h1 className="text-5xl md:text-7xl font-extrabold text-[#4487c5] leading-tight drop-shadow-lg">
+          Unleash the Power of GPU<br />Cloud Computing
+        </h1>
+        <p className="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
+          Revolutionizing GPU Cloud Computing Services for AI, ML, rendering, and high-performance workloads.
+        </p>
+      </header>
+
+      <main className="px-6 md:px-20 space-y-28 pb-20">
+        <Section title="Unparalleled Performance for High-Demand Computing">
+          SAIDI's GPU cloud offers state-of-the-art infrastructure and cutting-edge GPUs, delivering superior performance and flexibility for compute-intensive workloads.
+        </Section>
+
+        <FeaturesSection title="Why Choose SAIDI" features={benefits} />
+
+        <Section title="How It Works">
+          <ul className="space-y-4 text-left max-w-3xl mx-auto">
+            <li><strong>1. Sign Up and Deploy in Minutes:</strong> Create an account and start using SAIDI's GPU cloud immediately.</li>
+            <li><strong>2. Superior Performance:</strong> Enjoy lightning-fast compute speeds for any workload.</li>
+            <li><strong>3. Scale as Needed:</strong> Flexible and scalable GPU infrastructure for all business sizes.</li>
+          </ul>
+        </Section>
+
+        <Section title="Call to Action">
+          <p className="mb-4">Ready to elevate your computing performance?</p>
+          <a
+            href="/services"
+            className="inline-block px-6 py-3 bg-[#e35275] hover:bg-[#c63e63] text-white font-bold rounded-full transition"
+          >
+            Learn More
+          </a>
+        </Section>
+
+        <FeaturesSection title="Our Services" features={services} />
+        <FeaturesSection title="Managed Services" features={managedServices} />
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
-  );
+  )
 }
+
+function Section({ title, children }) {
+  return (
+    <motion.section
+      className="max-w-5xl mx-auto"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+      <h2 className="text-3xl font-bold text-[#4487c5] mb-6 text-center">{title}</h2>
+      <div className="text-lg text-gray-300 text-center max-w-3xl mx-auto leading-relaxed">
+        {children}
+      </div>
+    </motion.section>
+  )
+}
+
+function FeaturesSection({ title, features }) {
+  return (
+    <motion.section
+      className="max-w-6xl mx-auto"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+      <h2 className="text-3xl font-bold text-[#4487c5] mb-10 text-center">{title}</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {features.map(({ icon: Icon, title, description }) => (
+          <div
+            key={title}
+            className="bg-gray-900 border border-gray-700 p-6 rounded-2xl shadow hover:shadow-lg transition"
+          >
+            {Icon && <Icon className="text-[#4487c5] w-8 h-8 mb-4" />}
+            <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
+            <p className="text-gray-400 text-sm leading-relaxed">{description}</p>
+          </div>
+        ))}
+      </div>
+    </motion.section>
+  )
+}
+
+const services = [
+  {
+    icon: LucideCpu,
+    title: 'GPU Rental',
+    description: 'Rent powerful GPUs for compute-intensive tasks with flexible terms and pricing.'
+  },
+  {
+    icon: LucideServer,
+    title: 'Cloud GPU Instances',
+    description: 'Tailored configurations for machine learning, rendering, and more.'
+  },
+  {
+    icon: LucideSettings,
+    title: 'GPU Management',
+    description: 'Dashboard to manage, monitor, and scale your GPU resources.'
+  },
+  {
+    icon: LucideActivity,
+    title: '24/7 Support',
+    description: 'Dedicated support to keep your operations running smoothly and efficiently.'
+  },
+  {
+    icon: LucideShieldCheck,
+    title: 'Cost-Effective Solutions',
+    description: 'Transparent billing and optimal performance to maximize your ROI.'
+  },
+]
+
+const managedServices = [
+  {
+    icon: LucideSettings,
+    title: 'Infrastructure Management',
+    description: 'Provisioning, configuration, scaling, and optimization of your GPU cloud.'
+  },
+  {
+    icon: LucideShieldCheck,
+    title: 'Security & Compliance',
+    description: 'Full-stack security management, threat detection, and compliance assurance.'
+  },
+  {
+    icon: LucideActivity,
+    title: 'Backup & Recovery',
+    description: 'Automated backups, disaster recovery planning, and restoration services.'
+  },
+  {
+    icon: LucideCpu,
+    title: 'Custom Solutions',
+    description: 'Bespoke architecture tailored to your specific industry and workload needs.'
+  },
+]
+
+const benefits = [
+  {
+    icon: LucideShieldCheck,
+    title: 'Flexibility & Cost Efficiency',
+    description: 'Scalable infrastructure with transparent pricing tailored to your workload needs.'
+  },
+  {
+    icon: LucideCpu,
+    title: 'High Performance GPUs',
+    description: 'Use the latest GPUs optimized for compute-heavy tasks like AI, ML, and rendering.'
+  },
+  {
+    icon: LucideServer,
+    title: 'Reliable Cloud Infrastructure',
+    description: 'Consistently fast performance backed by modern data center technology.'
+  }
+]
