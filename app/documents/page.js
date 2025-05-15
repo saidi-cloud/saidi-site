@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function DocumentsPage() {
   return (
@@ -20,21 +20,38 @@ export default function DocumentsPage() {
 
       <ul className="space-y-6 max-w-3xl mx-auto text-left text-lg text-gray-200">
         <li>
-          <Link href="/documents/terms" className="text-[#e35275] hover:underline">
+          <Link
+            href="/documents/terms"
+            className="text-[#e35275] hover:underline"
+          >
             Terms of Service
           </Link>
         </li>
         <li>
-          <Link href="/documents/privacy" className="text-[#e35275] hover:underline">
+          <Link
+            href="/documents/privacy"
+            className="text-[#e35275] hover:underline"
+          >
             Privacy Policy
           </Link>
         </li>
         <li>
-          <Link href="/documents/gpu-pricing" className="text-[#e35275] hover:underline">
+          <Link
+            href="/documents/gpu-pricing"
+            className="text-[#e35275] hover:underline"
+          >
             GPU Pricing Schedule
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/documents/cloud-infrastructure"
+            className="text-[#e35275] hover:underline"
+          >
+            SAIDI Cloud Infrastructure
           </Link>
         </li>
       </ul>
     </motion.div>
-  )
+  );
 }
