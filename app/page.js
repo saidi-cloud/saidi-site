@@ -34,7 +34,7 @@ export default function HomePage() {
 
         <Section title="How It Works">
           <ul className="space-y-4 text-left max-w-3xl mx-auto">
-            <li><strong>1. Sign Up and Deploy in Minutes:</strong> Create an account and start using SAIDI's GPU cloud immediately.</li>
+            <li><strong>1. Sign Up and Deploy in Minutes:</strong> Create an account and start using SAIDI&#39;s GPU cloud immediately.</li>
             <li><strong>2. Superior Performance:</strong> Enjoy lightning-fast compute speeds for any workload.</li>
             <li><strong>3. Scale as Needed:</strong> Flexible and scalable GPU infrastructure for all business sizes.</li>
           </ul>

@@ -13,7 +13,7 @@ export default function ContactPage() {
       <section className="text-center">
         <h1 className="text-4xl font-bold text-[#4487c5] mb-4">Contact SAIDI</h1>
         <p className="text-gray-300 max-w-3xl mx-auto text-lg">
-          We'd love to hear from you. Reach out to us with your queries, feedback, or partnership ideas.
+        We&#39;d love to hear from you. Reach out to us with your queries, feedback, or partnership ideas.
         </p>
       </section>
 
