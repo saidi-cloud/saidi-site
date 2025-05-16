@@ -39,6 +39,7 @@ export default function RootLayout({ children }) {
               <Link href="/services" className="hover:text-[#4487c5] transition">Services</Link>
               <Link href="/documents" className="hover:text-[#4487c5] transition">Documents</Link>
               <Link href="/contact" className="hover:text-[#4487c5] transition">Contact</Link>
+              <Link href="/admin/login" className="hover:text-[#4487c5] transition">Admin</Link>
             </nav>
 
             {/* Mobile menu dropdown */}
@@ -49,6 +50,7 @@ export default function RootLayout({ children }) {
                 <Link href="/services" className="hover:text-[#4487c5] transition" onClick={() => setMenuOpen(false)}>Services</Link>
                 <Link href="/documents" className="hover:text-[#4487c5] transition" onClick={() => setMenuOpen(false)}>Documents</Link>
                 <Link href="/contact" className="hover:text-[#4487c5] transition" onClick={() => setMenuOpen(false)}>Contact</Link>
+                <Link href="/admin/login" className="hover:text-[#4487c5] transition" onClick={() => setMenuOpen(false)}>Admin</Link>
               </nav>
             )}
           </div>

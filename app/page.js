@@ -27,14 +27,14 @@ export default function HomePage() {
 
       <main className="px-6 md:px-20 space-y-28 pb-20">
         <Section title="Unparalleled Performance for High-Demand Computing">
-          SAIDI&#39;s GPU cloud offers state-of-the-art infrastructure and cutting-edge GPUs, delivering superior performance and flexibility for compute-intensive workloads.
+          SAIDI's GPU cloud offers state-of-the-art infrastructure and cutting-edge GPUs, delivering superior performance and flexibility for compute-intensive workloads.
         </Section>
 
         <FeaturesSection title="Why Choose SAIDI" features={benefits} />
 
         <Section title="How It Works">
           <ul className="space-y-4 text-left max-w-3xl mx-auto">
-            <li><strong>1. Sign Up and Deploy in Minutes:</strong> Create an account and start using SAIDI&#39;s GPU cloud immediately.</li>
+            <li><strong>1. Sign Up and Deploy in Minutes:</strong> Create an account and start using SAIDI's GPU cloud immediately.</li>
             <li><strong>2. Superior Performance:</strong> Enjoy lightning-fast compute speeds for any workload.</li>
             <li><strong>3. Scale as Needed:</strong> Flexible and scalable GPU infrastructure for all business sizes.</li>
           </ul>
