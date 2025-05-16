@@ -15,36 +15,78 @@ export default function PricingPage() {
         SAIDI offers a transparent, pay-as-you-go pricing model for all GPU compute services. The following schedule outlines our current hourly and monthly rates.
       </p>
 
-      <table className="w-full mt-8 text-left text-sm border-collapse">
-        <thead>
-          <tr className="text-[#e35275] border-b border-gray-700">
-            <th className="pb-2">GPU Type</th>
-            <th className="pb-2">vRAM</th>
-            <th className="pb-2">Hourly Rate (USD)</th>
-            <th className="pb-2">Monthly Rate (USD)</th>
-          </tr>
-        </thead>
-        <tbody className="text-gray-300">
-          <tr className="border-t border-gray-800">
-            <td>NVIDIA A100</td>
-            <td>80 GB</td>
-            <td>$4.50</td>
-            <td>$1,350.00</td>
-          </tr>
-          <tr className="border-t border-gray-800">
-            <td>NVIDIA RTX 6000 Ada</td>
-            <td>48 GB</td>
-            <td>$2.80</td>
-            <td>$850.00</td>
-          </tr>
-          <tr className="border-t border-gray-800">
-            <td>NVIDIA T4</td>
-            <td>16 GB</td>
-            <td>$0.75</td>
-            <td>$220.00</td>
-          </tr>
-        </tbody>
-      </table>
+      {/* Desktop Table */}
+      <div className="hidden md:block">
+        <table className="w-full mt-8 text-left text-sm border-collapse">
+          <thead>
+            <tr className="text-[#e35275] border-b border-gray-700">
+              <th className="pb-2">GPU Type</th>
+              <th className="pb-2">vRAM</th>
+              <th className="pb-2">Hourly Rate (USD)</th>
+              <th className="pb-2">Monthly Rate (USD)</th>
+            </tr>
+          </thead>
+          <tbody className="text-gray-300">
+            <tr className="border-t border-gray-800">
+              <td>NVIDIA A100</td>
+              <td>80 GB</td>
+              <td>$4.50</td>
+              <td>$1,350.00</td>
+            </tr>
+            <tr className="border-t border-gray-800">
+              <td>NVIDIA RTX 6000 Ada</td>
+              <td>48 GB</td>
+              <td>$2.80</td>
+              <td>$850.00</td>
+            </tr>
+            <tr className="border-t border-gray-800">
+              <td>NVIDIA T4</td>
+              <td>16 GB</td>
+              <td>$0.75</td>
+              <td>$220.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      {/* Mobile Cards */}
+      <div className="md:hidden space-y-4 mt-8">
+        <div className="bg-gray-900 rounded-lg p-4 space-y-2">
+          <h3 className="text-[#e35275] font-semibold">NVIDIA A100</h3>
+          <div className="grid grid-cols-2 gap-2 text-sm">
+            <div className="text-gray-400">vRAM</div>
+            <div>80 GB</div>
+            <div className="text-gray-400">Hourly Rate</div>
+            <div>$4.50</div>
+            <div className="text-gray-400">Monthly Rate</div>
+            <div>$1,350.00</div>
+          </div>
+        </div>
+
+        <div className="bg-gray-900 rounded-lg p-4 space-y-2">
+          <h3 className="text-[#e35275] font-semibold">NVIDIA RTX 6000 Ada</h3>
+          <div className="grid grid-cols-2 gap-2 text-sm">
+            <div className="text-gray-400">vRAM</div>
+            <div>48 GB</div>
+            <div className="text-gray-400">Hourly Rate</div>
+            <div>$2.80</div>
+            <div className="text-gray-400">Monthly Rate</div>
+            <div>$850.00</div>
+          </div>
+        </div>
+
+        <div className="bg-gray-900 rounded-lg p-4 space-y-2">
+          <h3 className="text-[#e35275] font-semibold">NVIDIA T4</h3>
+          <div className="grid grid-cols-2 gap-2 text-sm">
+            <div className="text-gray-400">vRAM</div>
+            <div>16 GB</div>
+            <div className="text-gray-400">Hourly Rate</div>
+            <div>$0.75</div>
+            <div className="text-gray-400">Monthly Rate</div>
+            <div>$220.00</div>
+          </div>
+        </div>
+      </div>
 
       <section className="space-y-4 mt-10">
         <h2 className="text-2xl font-semibold text-[#e35275]">Included Features</h2>
