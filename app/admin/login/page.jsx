@@ -41,7 +41,7 @@ export default function AdminLogin() {
       >
         <div className="text-center mb-8">
           <Image
-            src="/saidi-logo.png"
+            src="/saidi-logo.webp"
             alt="SAIDI Logo"
             width={150}
             height={150}
