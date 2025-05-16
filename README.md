@@ -59,8 +59,39 @@ The contact form requires a Resend account and domain setup:
 
 ## Deployment
 
-The site is configured for deployment on Netlify. The following environment variables need to be set in the Netlify dashboard:
-- `RESEND_API_KEY`
+The site is configured for deployment on Netlify. Follow these steps to set up deployment:
+
+1. **Netlify Account Setup**
+   - Sign up for a [Netlify account](https://app.netlify.com/signup)
+   - Connect your Git repository to Netlify
+
+2. **Build Settings**
+   Configure the following build settings in Netlify:
+   - Build command: `npm run build`
+   - Publish directory: `.next`
+   - Node version: 22.15.1
+
+3. **Environment Variables**
+   Set up the following environment variables in Netlify:
+   - `RESEND_API_KEY`: Your Resend API key
+
+4. **Domain Configuration**
+   - The domain (saidi.sg) is registered with [Exabyte.sg](https://exabyte.sg)
+   - Domain renewal date: June 7, 2026
+   - Nameservers are configured to use Netlify's nameservers for hosting
+   - Add your custom domain in Netlify
+   - Configure DNS settings as per Netlify's instructions
+   - Enable HTTPS (Netlify provides free SSL certificates)
+
+5. **Deployment Process**
+   - Netlify automatically deploys when changes are pushed to the main branch
+   - Preview deployments are created for pull requests
+   - You can manually trigger deployments from the Netlify dashboard
+
+6. **Post-Deployment**
+   - Verify the site is working correctly
+   - Check that the contact form is functional
+   - Test the site on different devices and browsers
 
 ## Contributing
 
