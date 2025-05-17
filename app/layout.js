@@ -8,6 +8,12 @@ export default function RootLayout({ children }) {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      </head>
       <body className="bg-black text-white font-sans">
         <header className="px-6 py-4 border-b border-gray-800">
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center max-w-7xl mx-auto gap-4 relative">
