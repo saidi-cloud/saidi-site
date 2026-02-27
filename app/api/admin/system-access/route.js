@@ -3,14 +3,12 @@ import { getStore } from '@netlify/blobs'
 
 const DEFAULT_DATA = {
   accounts: [
-    { service: "Github", url: "https://github.com/saidi-cloud", username: "lv@saidi.sg" },
-    { service: "Netlify", url: "https://app.netlify.com/teams/saidi-cloud/projects", username: "lv@saidi.sg" },
-    { service: "Exabytes", url: "https://exabytes.sg", username: "lv@saidi.sg" },
-    { service: "Zoho (Email)", url: "https://mail.zoho.com", username: "lv@saidi.sg" }
+    { service: "Github", url: "https://github.com/saidi-cloud", username: "lv@saidi.sg", password: "kun123lu456!", notes: "" },
+    { service: "Netlify", url: "https://app.netlify.com/teams/saidi-cloud/projects", username: "lv@saidi.sg", password: "kun123lu456!", notes: "" },
+    { service: "Exabytes", url: "https://exabytes.sg", username: "lv@saidi.sg", password: "kun123lu456!", notes: "Requires 2FA handover." },
+    { service: "Zoho (Email)", url: "https://mail.zoho.com", username: "lv@saidi.sg", password: "kun123lu456!", notes: "" }
   ],
   notes: [
-    "Password for all accounts: kun123lu456!",
-    "Note: Exabytes requires 2FA handover.",
     "All services are on the free tier - no billing or credit card setup is necessary."
   ]
 }

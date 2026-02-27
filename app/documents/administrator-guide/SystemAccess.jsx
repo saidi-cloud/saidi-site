@@ -54,7 +54,7 @@ export default function SystemAccess() {
   const addAccount = () => {
     setData({
       ...data,
-      accounts: [...data.accounts, { service: '', url: '', username: '' }]
+      accounts: [...data.accounts, { service: '', url: '', username: '', password: '', notes: '' }]
     })
   }
 
@@ -121,9 +121,11 @@ export default function SystemAccess() {
         <table className="w-full text-left border-collapse">
           <thead>
             <tr className="border-b border-gray-700">
-              <th className="py-3 px-4 text-[#4487c5] font-semibold w-1/4">Service</th>
-              <th className="py-3 px-4 text-[#4487c5] font-semibold w-1/3">URL</th>
-              <th className="py-3 px-4 text-[#4487c5] font-semibold w-1/4">Username</th>
+              <th className="py-3 px-4 text-[#4487c5] font-semibold w-1/5">Service</th>
+              <th className="py-3 px-4 text-[#4487c5] font-semibold w-1/5">URL</th>
+              <th className="py-3 px-4 text-[#4487c5] font-semibold w-1/5">Username</th>
+              <th className="py-3 px-4 text-[#4487c5] font-semibold w-1/5">Password</th>
+              <th className="py-3 px-4 text-[#4487c5] font-semibold w-1/5">Notes</th>
               {isEditing && <th className="py-3 px-4 w-12"></th>}
             </tr>
           </thead>
@@ -166,6 +168,30 @@ export default function SystemAccess() {
                     />
                   ) : (
                     <span className="text-gray-300 font-mono text-sm">{account.username}</span>
+                  )}
+                </td>
+                <td className="py-3 px-4">
+                  {isEditing ? (
+                    <input
+                      type="text"
+                      value={account.password || ''}
+                      onChange={(e) => updateAccount(index, 'password', e.target.value)}
+                      className="w-full bg-gray-800 border border-gray-700 rounded px-2 py-1 text-white focus:outline-none focus:border-[#4487c5]"
+                    />
+                  ) : (
+                    <span className="text-gray-300 font-mono text-sm">{account.password || '-'}</span>
+                  )}
+                </td>
+                <td className="py-3 px-4">
+                  {isEditing ? (
+                    <input
+                      type="text"
+                      value={account.notes || ''}
+                      onChange={(e) => updateAccount(index, 'notes', e.target.value)}
+                      className="w-full bg-gray-800 border border-gray-700 rounded px-2 py-1 text-white focus:outline-none focus:border-[#4487c5]"
+                    />
+                  ) : (
+                    <span className="text-gray-300 text-sm">{account.notes || '-'}</span>
                   )}
                 </td>
                 {isEditing && (
