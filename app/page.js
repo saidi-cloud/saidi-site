@@ -18,7 +18,7 @@ export default function HomePage() {
           />
         </div>
         <h1 className="text-5xl md:text-7xl font-extrabold text-[#4487c5] leading-tight drop-shadow-lg">
-          Unleash the Power of GPU<br />Cloud Computing
+          Latest Optical Module
         </h1>
         <p className="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
           Revolutionizing GPU Cloud Computing Services for AI, ML, rendering, and high-performance workloads.
