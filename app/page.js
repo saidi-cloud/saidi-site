@@ -27,7 +27,7 @@ export default function HomePage() {
 
       <main className="px-6 md:px-20 space-y-28 pb-20">
         <Section title="Powering Connections, Driving Innovation">
-          provide cutting-edge solutions for data centers, telecommunications, and enterprise networks, enabling faster, more efficient global connectivity.
+          SAIDI provide cutting-edge solutions for data centers, telecommunications, and enterprise networks, enabling faster, more efficient global connectivity.
         </Section>
 
         <FeaturesSection title="Why Choose SAIDI" features={benefits} />
