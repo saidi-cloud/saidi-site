@@ -21,7 +21,7 @@ export default function HomePage() {
           Optical Modules<br />
         </h1>
         <p className="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
-          Revolutionizing GPU Cloud Computing Services for AI, ML, rendering, and high-performance workloads.
+          Recognizinging the greatpotential in the fields of Al, ML,data analytics. Shifted focus from conventional priorities to optical-electrical transmission.
         </p>
       </header>
 
