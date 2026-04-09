@@ -21,13 +21,13 @@ export default function HomePage() {
           Optical Modules<br />
         </h1>
         <p className="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
-          Recognizinging the greatpotential in the fields of Al, ML,data analytics. Shifted focus from conventional priorities to optical-electrical transmission.
+          SAIDI delivers high-performance, reliable optical modules for next-generation data transmission.
         </p>
       </header>
 
       <main className="px-6 md:px-20 space-y-28 pb-20">
-        <Section title="Unparalleled Performance for High-Demand Computing">
-          SAIDI&apos;s GPU cloud offers state-of-the-art infrastructure and cutting-edge GPUs, delivering superior performance and flexibility for compute-intensive workloads.
+        <Section title="Powering Connections, Driving Innovation">
+          provide cutting-edge solutions for data centers, telecommunications, and enterprise networks, enabling faster, more efficient global connectivity.
         </Section>
 
         <FeaturesSection title="Why Choose SAIDI" features={benefits} />
