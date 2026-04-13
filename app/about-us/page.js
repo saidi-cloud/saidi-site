@@ -13,9 +13,7 @@ export default function AboutUsPage() {
       <section className="text-center max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-[#4487c5] mb-6">About SAIDI</h1>
         <p className="text-gray-300 text-lg leading-relaxed">
-          SAIDI (Singapore Advanced Infrastructure for Distributed Intelligence) is a cloud GPU infrastructure provider dedicated to
-          supporting high-performance computing needs across industries. Our mission is to deliver scalable, secure, and cost-effective
-          GPU compute infrastructure as a service.
+          SAIDI is an optical module supplier dedicated to supporting the needs of various industries. Our mission is to provide a wide range of optical modules and related services.
         </p>
       </section>
 
