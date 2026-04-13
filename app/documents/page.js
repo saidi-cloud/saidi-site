@@ -24,6 +24,7 @@ export default function DocumentsPage() {
             href="/documents/terms"
             className="text-[#e35275] hover:underline"
           >
+            /* 
             Terms of Service
           </Link>
         </li>
@@ -31,6 +32,7 @@ export default function DocumentsPage() {
           <Link
             href="/documents/privacy"
             className="text-[#e35275] hover:underline"
+            */
           >
             Privacy Policy
           </Link>
@@ -40,6 +42,7 @@ export default function DocumentsPage() {
             href="/documents/gpu-pricing"
             className="text-[#e35275] hover:underline"
           >
+              /* 
             GPU Pricing Schedule
           </Link>
         </li>
