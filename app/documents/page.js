@@ -23,16 +23,7 @@ export default function DocumentsPage() {
           <Link
             href="/documents/terms"
             className="text-[#e35275] hover:underline"
-          >
-            /* 
-            Terms of Service
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/documents/privacy"
-            className="text-[#e35275] hover:underline"
-            */
+          
           >
             Privacy Policy
           </Link>
@@ -42,16 +33,8 @@ export default function DocumentsPage() {
             href="/documents/gpu-pricing"
             className="text-[#e35275] hover:underline"
           >
-              /* 
-            GPU Pricing Schedule
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/documents/cloud-infrastructure"
-            className="text-[#e35275] hover:underline"
-          >
-            SAIDI Cloud Infrastructure
+             
+          
           </Link>
         </li>
       </ul>
