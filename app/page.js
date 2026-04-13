@@ -98,6 +98,7 @@ function FeaturesSection({ title, features }) {
   )
 }
 
+/* 
 const services = [
   {
     icon: LucideCpu,
@@ -166,3 +167,4 @@ const benefits = [
     description: 'Consistently fast performance backed by modern data center technology.'
   }
 ]
+*/
