@@ -18,20 +18,20 @@ export default function HomePage() {
           />
         </div>
         <h1 className="text-5xl md:text-7xl font-extrabold text-[#4487c5] leading-tight drop-shadow-lg">
-          Unleash the Power of GPU<br />Cloud Computing
+          Optical Modules
         </h1>
         <p className="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
-          Revolutionizing GPU Cloud Computing Services for AI, ML, rendering, and high-performance workloads.
+          Powering Connections, Driving Innovation
         </p>
       </header>
 
       <main className="px-6 md:px-20 space-y-28 pb-20">
         <Section title="Unparalleled Performance for High-Demand Computing">
-          SAIDI&apos;s GPU cloud offers state-of-the-art infrastructure and cutting-edge GPUs, delivering superior performance and flexibility for compute-intensive workloads.
+          SAIDI provide cutting-edge solutions for data centers, telecommunications, and enterprise networks, enabling faster, more efficient global connectivity.
         </Section>
 
         <FeaturesSection title="Why Choose SAIDI" features={benefits} />
-
+/*
         <Section title="How It Works">
           <ul className="space-y-4 text-left max-w-3xl mx-auto">
             <li><strong>1. Sign Up and Deploy in Minutes:</strong> Create an account and start using SAIDI&apos;s GPU cloud immediately.</li>
@@ -39,9 +39,9 @@ export default function HomePage() {
             <li><strong>3. Scale as Needed:</strong> Flexible and scalable GPU infrastructure for all business sizes.</li>
           </ul>
         </Section>
-
+*/
         <Section title="Call to Action">
-          <p className="mb-4">Ready to elevate your computing performance?</p>
+          <p className="mb-4">Ready to elevate your performance?</p>
           <a
             href="/services"
             className="inline-block px-6 py-3 bg-[#e35275] hover:bg-[#c63e63] text-white font-bold rounded-full transition"
