@@ -18,16 +18,16 @@ export default function HomePage() {
           />
         </div>
         <h1 className="text-5xl md:text-7xl font-extrabold text-[#4487c5] leading-tight drop-shadow-lg">
-          Optical Modules<br />
+          Unleash the Power of GPU<br />Cloud Computing
         </h1>
         <p className="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
-          SAIDI delivers high-performance, reliable optical modules for next-generation data transmission.
+          Revolutionizing GPU Cloud Computing Services for AI, ML, rendering, and high-performance workloads.
         </p>
       </header>
 
       <main className="px-6 md:px-20 space-y-28 pb-20">
-        <Section title="Powering Connections, Driving Innovation">
-          SAIDI provide cutting-edge solutions for data centers, telecommunications, and enterprise networks, enabling faster, more efficient global connectivity.
+        <Section title="Unparalleled Performance for High-Demand Computing">
+          SAIDI&apos;s GPU cloud offers state-of-the-art infrastructure and cutting-edge GPUs, delivering superior performance and flexibility for compute-intensive workloads.
         </Section>
 
         <FeaturesSection title="Why Choose SAIDI" features={benefits} />
@@ -98,7 +98,6 @@ function FeaturesSection({ title, features }) {
   )
 }
 
-/* 
 const services = [
   {
     icon: LucideCpu,
@@ -167,4 +166,3 @@ const benefits = [
     description: 'Consistently fast performance backed by modern data center technology.'
   }
 ]
-*/
