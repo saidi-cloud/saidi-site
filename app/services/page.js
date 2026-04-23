@@ -34,8 +34,8 @@ export default function ServicesPage() {
 const services = [
   {
     icon: LucideCpu,
-    title: 'Rental',
-    description: 'Rent products for tasks with flexible terms and pricing.'
+    title: 'Transceivers and Cables',
+    description: 'Meet your requirements of low latency, low power consumption and reliability.'
   },
   {
     icon: LucideServer,
