@@ -13,9 +13,7 @@ export default function AboutUsPage() {
       <section className="text-center max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-[#4487c5] mb-6">About SAIDI</h1>
         <p className="text-gray-300 text-lg leading-relaxed">
-          SAIDI (Singapore Advanced Infrastructure for Distributed Intelligence) is a cloud GPU infrastructure provider dedicated to
-          supporting high-performance computing needs across industries. Our mission is to deliver scalable, secure, and cost-effective
-          GPU compute infrastructure as a service.
+          SAIDI is a facility provider. Our mission is to provide scalable, secure, and cost-effective optical modules and various services.
         </p>
       </section>
 
@@ -50,8 +48,7 @@ export default function AboutUsPage() {
                 </div>
                 <div className="bg-gradient-to-r from-[#0a2233] to-[#112d42] rounded-xl p-6 shadow-lg w-full md:w-1/2">
                   <ul className="text-gray-300 text-base space-y-1">
-                    <li>Recognized demand in AI, ML, data analytics, and graphics rendering.</li>
-                    <li>Shifted focus from traditional CPU to GPU infrastructure.</li>
+                    <li>Shifted focus from traditional CPU to optical module.</li>
                   </ul>
                 </div>
               </motion.div>
@@ -72,7 +69,7 @@ export default function AboutUsPage() {
                 <div className="bg-gradient-to-l from-[#0a2233] to-[#112d42] rounded-xl p-6 shadow-lg w-full md:w-1/2">
                   <ul className="text-gray-300 text-base space-y-1">
                     <li>Attracted global private equity for growth.</li>
-                    <li>Invested in cutting-edge GPU hardware and software.</li>
+                    <li>Invested in cutting-edge hardware and software.</li>
                   </ul>
                 </div>
               </motion.div>
@@ -100,7 +97,7 @@ export default function AboutUsPage() {
             </div>
           </div>
           <div className="mt-10 text-center text-white text-lg font-semibold max-w-3xl mx-auto">
-            SAIDI Cloud has been steadily building its foundation to become the go-to provider of cloud-based GPU compute resources in Southeast Asia.
+            SAIDI Cloud has been steadily building its foundation to become the go-to provider resources in Southeast Asia.
           </div>
         </div>
       </section>
@@ -109,7 +106,7 @@ export default function AboutUsPage() {
         <div>
           <h2 className="text-2xl font-semibold text-[#e35275] mb-2">Our Mission</h2>
           <p className="text-gray-300 leading-relaxed">
-            To empower organizations and researchers by providing access to powerful, on-demand GPU computing resources. We aim to simplify
+            To empower organizations and researchers by providing access to resources. We aim to simplify
             infrastructure and accelerate innovation.
           </p>
         </div>
@@ -117,15 +114,14 @@ export default function AboutUsPage() {
         <div>
           <h2 className="text-2xl font-semibold text-[#e35275] mb-2">Why We Exist</h2>
           <p className="text-gray-300 leading-relaxed">
-            As AI/ML and data-intensive applications become essential, traditional compute models fall short. SAIDI bridges this gap by offering a
-            robust GPU cloud platform for experimentation, production, and scale 鈥� without vendor lock-in.
+            As data-intensive applications become essential, traditional models fall short. SAIDI bridges this gap by offering a robust cloud platform for experimentation, production, and scale without vendor lock-in.
           </p>
         </div>
 
         <div>
           <h2 className="text-2xl font-semibold text-[#e35275] mb-2">Our Team</h2>
           <p className="text-gray-300 leading-relaxed">
-            We are a team of engineers, researchers, and infrastructure experts passionate about democratizing access to GPU computing.
+            We are a team of engineers, researchers, and infrastructure experts passionate about democratizing access to optical modules.
           </p>
         </div>
       </section>
