@@ -14,7 +14,7 @@ export default function ServicesPage() {
       <section className="text-center">
         <h1 className="text-4xl font-bold text-[#4487c5] mb-4">Our Services</h1>
         <p className="text-gray-300 max-w-3xl mx-auto text-lg">
-          SAIDI offers a wide range of GPU cloud computing services designed for AI, machine learning, and compute-intensive applications.
+          SAIDI offers a wide range of services for optical module and other products.
         </p>
       </section>
 
@@ -34,23 +34,23 @@ export default function ServicesPage() {
 const services = [
   {
     icon: LucideCpu,
-    title: 'GPU Rental',
-    description: 'Access powerful GPUs on-demand with hourly or monthly pricing.'
+    title: 'Rental',
+    description: 'Rent products for tasks with flexible terms and pricing.'
   },
   {
     icon: LucideServer,
-    title: 'Cloud GPU Instances',
-    description: 'Launch virtual GPU servers pre-configured for AI/ML and simulation workloads.'
+    title: 'Cloud Instances',
+    description: 'Tailored configurations for machine learning, rendering, and more.'
   },
   {
     icon: LucideActivity,
-    title: 'Managed GPU Infrastructure',
-    description: 'We handle deployment, scaling, and monitoring so you can focus on development.'
+    title: 'Management',
+    description: 'Dashboard to manage, monitor, and scale your resources.'
   },
   {
     icon: LucideSettings,
     title: 'Custom Configuration',
-    description: 'Tailored GPU setups to meet your specific project requirements.'
+    description: 'Tailored setups to meet your specific project requirements.'
   },
   {
     icon: LucideShieldCheck,
