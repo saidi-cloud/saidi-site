@@ -40,7 +40,7 @@ export default function DocumentsPage() {
             href="/documents/gpu-pricing"
             className="text-[#e35275] hover:underline"
           >
-            GPU Pricing Schedule
+            Pricing Schedule
           </Link>
         </li>
         <li>
