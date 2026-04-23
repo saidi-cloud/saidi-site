@@ -11,32 +11,32 @@ export default function HomePage() {
         <div className="absolute inset-0 -z-10 opacity-10">
           <Image
             src="/gpu-hero.jpg"
-            alt="GPU Cloud Illustration"
+            alt="Cloud Illustration"
             layout="fill"
             objectFit="cover"
             priority
           />
         </div>
         <h1 className="text-5xl md:text-7xl font-extrabold text-[#4487c5] leading-tight drop-shadow-lg">
-          Optical Module
+          Optical Modules
         </h1>
         <p className="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
-          Revolutionizing GPU Cloud Computing Services for AI, ML, rendering, and high-performance workloads.
+          Provide Optical Modules for High-performance Workloads.
         </p>
       </header>
 
       <main className="px-6 md:px-20 space-y-28 pb-20">
-        <Section title="Unparalleled Performance for High-Demand Computing">
-          SAIDI&apos;s GPU cloud offers state-of-the-art infrastructure and cutting-edge GPUs, delivering superior performance and flexibility for compute-intensive workloads.
+        <Section title="Unparalleled Performance">
+          SAIDI&apos;s optical modules provide excellent performance and flexibility for workloads.
         </Section>
 
         <FeaturesSection title="Why Choose SAIDI" features={benefits} />
 
         <Section title="How It Works">
           <ul className="space-y-4 text-left max-w-3xl mx-auto">
-            <li><strong>1. Sign Up and Deploy in Minutes:</strong> Create an account and start using SAIDI&apos;s GPU cloud immediately.</li>
-            <li><strong>2. Superior Performance:</strong> Enjoy lightning-fast compute speeds for any workload.</li>
-            <li><strong>3. Scale as Needed:</strong> Flexible and scalable GPU infrastructure for all business sizes.</li>
+            <li><strong>1. Sign Up and Deploy in Minutes:</strong> Create an account and start using SAIDI&apos;s cloud immediately.</li>
+            <li><strong>2. Superior Performance:</strong> Enjoy lightning-fast speeds for any workload.</li>
+            <li><strong>3. Scale as Needed:</strong> Flexible and scalable infrastructure for all business sizes.</li>
           </ul>
         </Section>
 
@@ -101,18 +101,18 @@ function FeaturesSection({ title, features }) {
 const services = [
   {
     icon: LucideCpu,
-    title: 'GPU Rental',
-    description: 'Rent powerful GPUs for compute-intensive tasks with flexible terms and pricing.'
+    title: 'Rental',
+    description: 'Rent products for tasks with flexible terms and pricing.'
   },
   {
     icon: LucideServer,
-    title: 'Cloud GPU Instances',
+    title: 'Cloud Instances',
     description: 'Tailored configurations for machine learning, rendering, and more.'
   },
   {
     icon: LucideSettings,
-    title: 'GPU Management',
-    description: 'Dashboard to manage, monitor, and scale your GPU resources.'
+    title: 'Management',
+    description: 'Dashboard to manage, monitor, and scale your resources.'
   },
   {
     icon: LucideActivity,
@@ -122,7 +122,7 @@ const services = [
   {
     icon: LucideShieldCheck,
     title: 'Cost-Effective Solutions',
-    description: 'Transparent billing and optimal performance to maximize your ROI.'
+    description: 'Transparent billing and optimal performance.'
   },
 ]
 
@@ -130,7 +130,7 @@ const managedServices = [
   {
     icon: LucideSettings,
     title: 'Infrastructure Management',
-    description: 'Provisioning, configuration, scaling, and optimization of your GPU cloud.'
+    description: 'Provisioning, configuration, scaling, and optimization of your cloud.'
   },
   {
     icon: LucideShieldCheck,
@@ -157,8 +157,8 @@ const benefits = [
   },
   {
     icon: LucideCpu,
-    title: 'High Performance GPUs',
-    description: 'Use the latest GPUs optimized for compute-heavy tasks like AI, ML, and rendering.'
+    title: 'High Performance products',
+    description: 'Use the latest products optimized for tasks.'
   },
   {
     icon: LucideServer,
