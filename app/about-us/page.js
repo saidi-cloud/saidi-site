@@ -118,7 +118,7 @@ export default function AboutUsPage() {
           <h2 className="text-2xl font-semibold text-[#e35275] mb-2">Why We Exist</h2>
           <p className="text-gray-300 leading-relaxed">
             As AI/ML and data-intensive applications become essential, traditional compute models fall short. SAIDI bridges this gap by offering a
-            robust GPU cloud platform for experimentation, production, and scale — without vendor lock-in.
+            robust GPU cloud platform for experimentation, production, and scale 鈥� without vendor lock-in.
           </p>
         </div>
 
