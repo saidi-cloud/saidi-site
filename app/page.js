@@ -21,13 +21,13 @@ export default function HomePage() {
           Optical Modules & Colocation
         </h1>
         <p className="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
-          Provide Optical Modules for High-performance Workloads.
+          High-speed Interconnects + Reliable Data Center Infrastructure.
         </p>
       </header>
 
       <main className="px-6 md:px-20 space-y-28 pb-20">
         <Section title="Unparalleled Performance">
-          SAIDI&apos;s optical modules provide excellent performance and flexibility for workloads.
+          SAIDI&apos;s optical modules provide excellent performance.
         </Section>
 
         <FeaturesSection title="Why Choose SAIDI" features={benefits} />
@@ -101,68 +101,68 @@ function FeaturesSection({ title, features }) {
 const services = [
   {
     icon: LucideCpu,
-    title: 'Transceivers and Cables',
-    description: 'Meet your requirements of low latency, low power consumption and reliability.'
+    title: 'Transceivers & Cables',
+    description: 'High-speed optical modules and copper cables for low latency, low power, and reliable connectivity.'
   },
   {
     icon: LucideServer,
-    title: 'Cloud Instances',
-    description: 'Tailored configurations for machine learning, rendering, and more.'
+    title: 'Colocation Infrastructure',
+    description: 'Rack space, power, and bandwidth with redundant cooling and power for production workloads.'
   },
   {
     icon: LucideSettings,
-    title: 'Management',
-    description: 'Dashboard to manage, monitor, and scale your resources.'
+    title: 'Infrastructure Management',
+    description: 'Provisioning, configuration, monitoring, and optimization of your colocation environment.'
   },
   {
     icon: LucideActivity,
-    title: '24/7 Support',
-    description: 'Dedicated support to keep your operations running smoothly and efficiently.'
+    title: '24/7 Technical Support',
+    description: 'Dedicated support to keep your physical infrastructure and network connectivity running smoothly.'
   },
   {
     icon: LucideShieldCheck,
-    title: 'Cost-Effective Solutions',
-    description: 'Transparent billing and optimal performance.'
+    title: 'Custom Engineering',
+    description: 'Bespoke optical and cabling solutions tailored to your specific switch platforms and deployment scenarios.'
   },
 ]
 
 const managedServices = [
   {
     icon: LucideSettings,
-    title: 'Infrastructure Management',
-    description: 'Provisioning, configuration, scaling, and optimization of your cloud.'
+    title: 'Security & Compliance',
+    description: 'Physical security, access control, and compliance alignment for colocation deployments.'
   },
   {
     icon: LucideShieldCheck,
-    title: 'Security & Compliance',
-    description: 'Full-stack security management, threat detection, and compliance assurance.'
+    title: 'Backup & Recovery',
+    description: 'Disaster recovery planning and data protection support for your hosted infrastructure.'
   },
   {
     icon: LucideActivity,
-    title: 'Backup & Recovery',
-    description: 'Automated backups, disaster recovery planning, and restoration services.'
+    title: 'Cost-Effective Infrastructure',
+    description: 'Optimized colocation and optical solutions without unnecessary complexity or overspend.'
   },
   {
     icon: LucideCpu,
-    title: 'Custom Solutions',
-    description: 'Bespoke architecture tailored to your specific industry and workload needs.'
+    title: 'On-Site & Remote Assistance',
+    description: 'Professional support for colocation and optical deployment — from cable patching to module replacement.'
   },
 ]
 
 const benefits = [
   {
     icon: LucideShieldCheck,
-    title: 'Flexibility & Cost Efficiency',
-    description: 'Scalable infrastructure with transparent pricing tailored to your workload needs.'
+    title: 'Flexible Colocation',
+    description: 'Rack space, power, and bandwidth with infrastructure‑aligned, transparent pricing.'
   },
   {
     icon: LucideCpu,
-    title: 'High Performance products',
-    description: 'Use the latest products optimized for tasks.'
+    title: 'High‑Speed Optics Portfolio',
+    description: '25G–1.6T | DAC / ACC / AEC / AOC | CMIS 5.2 & QSFP112 MSA'
   },
   {
     icon: LucideServer,
-    title: 'Reliable Cloud Infrastructure',
-    description: 'Consistently fast performance backed by modern data center technology.'
+    title: 'Colocation + Optics Integration',
+    description: 'Redundant power & cooling + production‑tested optical modules — for reliable infrastructure and interconnect.'
   }
 ]
