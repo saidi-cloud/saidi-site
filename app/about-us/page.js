@@ -89,7 +89,7 @@ export default function AboutUsPage() {
                 </div>
                 <div className="bg-gradient-to-r from-[#0a2233] to-[#112d42] rounded-xl p-6 shadow-lg w-full md:w-1/2">
                   <ul className="text-gray-300 text-base space-y-1">
-                    <li>SAIDI Cloud has strategic partnerships with leading technology providers.</li>
+                    <li>SAIDI has strategic partnerships with leading technology providers.</li>
                     <li>Ensured low-latency, high availability, and data integrity.</li>
                   </ul>
                 </div>
@@ -97,7 +97,7 @@ export default function AboutUsPage() {
             </div>
           </div>
           <div className="mt-10 text-center text-white text-lg font-semibold max-w-3xl mx-auto">
-            SAIDI Cloud has been steadily building its foundation to become the go-to provider resources in Southeast Asia.
+            SAIDI has been steadily building its foundation to become the go-to provider resources in Southeast Asia.
           </div>
         </div>
       </section>
@@ -106,22 +106,21 @@ export default function AboutUsPage() {
         <div>
           <h2 className="text-2xl font-semibold text-[#e35275] mb-2">Our Mission</h2>
           <p className="text-gray-300 leading-relaxed">
-            To empower organizations and researchers by providing access to resources. We aim to simplify
-            infrastructure and accelerate innovation.
+            To help organizations deploy high-performance connectivity and reliable infrastructure — without complexity or vendor lock-in.
           </p>
         </div>
 
         <div>
           <h2 className="text-2xl font-semibold text-[#e35275] mb-2">Why We Exist</h2>
           <p className="text-gray-300 leading-relaxed">
-            As data-intensive applications become essential, traditional models fall short. SAIDI bridges this gap by offering a robust cloud platform for experimentation, production, and scale without vendor lock-in.
+            As data rates climb and network architectures evolve, generic off-the-shelf solutions often fall short. We bridge the gap by combining optical expertise with infrastructure understanding — ready for production, ready for scale.
           </p>
         </div>
 
         <div>
           <h2 className="text-2xl font-semibold text-[#e35275] mb-2">Our Team</h2>
           <p className="text-gray-300 leading-relaxed">
-            We are a team of engineers, researchers, and infrastructure experts passionate about democratizing access to optical modules.
+            We are engineers and infrastructure specialists who focus on one thing: making optical and colocation deployments work — reliably, compatibly, and without guesswork.
           </p>
         </div>
       </section>
