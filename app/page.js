@@ -18,7 +18,7 @@ export default function HomePage() {
           />
         </div>
         <h1 className="text-5xl md:text-7xl font-extrabold text-[#4487c5] leading-tight drop-shadow-lg">
-          Optical Modules
+          Optical Modules & Colocation
         </h1>
         <p className="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
           Provide Optical Modules for High-performance Workloads.
