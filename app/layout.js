@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
         </main>
 
         <footer className="text-center py-6 border-t border-gray-800 text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} SAIDI Cloud. All rights reserved.
+          &copy; {new Date().getFullYear()} SAIDI All rights reserved.
         </footer>
       </body>
     </html>
